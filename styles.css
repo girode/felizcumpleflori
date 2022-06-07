@@ -148,15 +148,40 @@ p {
 /* Effects */
 
 .birthdayCard:hover {
-    transform: perspective(2500px) rotate(5deg);
-    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .2), 0 10px 100px rgba(0, 0, 0, 0.5);
+    /* transform: perspective(2500px) rotate(5deg);
+    box-shadow: inset 100px 20px 100px rgba(0, 0, 0, .2), 0 10px 100px rgba(0, 0, 0, 0.5); */
 }
 
 .birthdayCard:hover .cardFront {
     transform: rotateY(-160deg);
+    
 }
 
 .birthdayCard:hover .happy,
 .birthdayCard:hover .balloons {
     visibility: hidden;
+}
+
+.birthdayCard:hover .pictures {
+    visibility: visible;
+}
+
+.pictures {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(160deg);
+
+}
+
+.pictures img  {
+    width: 200px;
+    height: auto;
+}
+
+.f1 {
+    position: absolute;
+    right: 209px;
+    top: 200px;
 }

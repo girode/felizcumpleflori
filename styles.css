@@ -6,10 +6,6 @@ body {
     justify-content: center;
     height: 100vh;
     background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
-
-    -webkit-animation: Animation 5s ease infinite;
-    -moz-animation: Animation 5s ease infinite;
-    animation: Animation 5s ease infinite;
 }
 
 .birthdayCard {
@@ -160,7 +156,7 @@ p {
     transform: rotateY(-160deg);
 }
 
-.birthdayCard:hover .happy {
+.birthdayCard:hover .happy,
+.birthdayCard:hover .balloons {
     visibility: hidden;
 }
-

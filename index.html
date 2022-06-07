@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="birthdayCard">
+    <div class="birthdayCard" id="birthdayCard">
         <div class="cardFront">
             <h3 class="happy">Feliz cumple Floriiiiiii!!!</h3>
             <div class="balloons">
@@ -22,7 +22,6 @@
                 <img src="f2.jpeg" alt="f2" class="f2">
             </div>
         </div>
-        
         <div class="cardInside">
             <p>Flori,</p>
             <p>
@@ -31,10 +30,19 @@
                 Te ama hasta el infinito ida y vuelta
                 <br>
                 <span>PD: Vale por 4 prendas Chilenas (L)</span>
-            </p>
+            </sp>
             <p class="name">Gabi</p>
         </div>
     </div>
-
+    <script type="text/javascript">
+        var element = document.getElementById("birthdayCard");
+        
+        function toggleClass(e) {
+            element.classList.toggle("touched");
+        }
+        
+        element.addEventListener('touchstart', toggleClass, false);
+        /* element.addEventListener('mousedown', toggleClass, false); */
+    </script>
 </body>
 </html>
